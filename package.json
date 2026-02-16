@@ -1,0 +1,22 @@
+{
+  "name": "kodnest-premium-build-system",
+  "version": "1.0.0",
+  "description": "Premium design system for B2C SaaS products - calm, intentional, coherent, confident",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve . -p 3000"
+  },
+  "keywords": [
+    "design-system",
+    "css",
+    "premium",
+    "saas",
+    "ui-components"
+  ],
+  "author": "KodNest",
+  "license": "PROPRIETARY",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
