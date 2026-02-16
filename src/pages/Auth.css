@@ -1,0 +1,61 @@
+.kn-auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--kn-space-lg);
+}
+
+.kn-auth-container {
+  width: 100%;
+  max-width: 480px;
+}
+
+.kn-auth-header {
+  text-align: center;
+  margin-bottom: var(--kn-space-xl);
+}
+
+.kn-auth-header .kn-heading-1 {
+  margin-bottom: var(--kn-space-xs);
+}
+
+.kn-auth-form {
+  background-color: #FFFFFF;
+  border: 1px solid var(--kn-color-border-subtle);
+  border-radius: var(--kn-radius-sm);
+  padding: var(--kn-space-xl);
+}
+
+.kn-form-group {
+  margin-bottom: var(--kn-space-md);
+}
+
+.kn-form-group label {
+  display: block;
+  margin-bottom: var(--kn-space-xs);
+  font-weight: var(--kn-font-weight-medium);
+}
+
+.kn-auth-submit {
+  width: 100%;
+  margin-top: var(--kn-space-md);
+  margin-bottom: var(--kn-space-md);
+}
+
+.kn-auth-footer {
+  text-align: center;
+  padding-top: var(--kn-space-md);
+  border-top: 1px solid var(--kn-color-border-subtle);
+}
+
+.kn-auth-link {
+  color: var(--kn-color-accent);
+  text-decoration: none;
+  margin-left: var(--kn-space-xs);
+  font-weight: var(--kn-font-weight-medium);
+}
+
+.kn-auth-link:hover {
+  text-decoration: underline;
+}

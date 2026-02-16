@@ -2,21 +2,19 @@
   "name": "kodnest-premium-build-system",
   "version": "1.0.0",
   "description": "Premium design system for B2C SaaS products - calm, intentional, coherent, confident",
-  "main": "index.html",
+  "type": "module",
   "scripts": {
-    "start": "npx serve .",
-    "dev": "npx serve . -p 3000"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": [
-    "design-system",
-    "css",
-    "premium",
-    "saas",
-    "ui-components"
-  ],
-  "author": "KodNest",
-  "license": "PROPRIETARY",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0"
+  },
   "devDependencies": {
-    "serve": "^14.2.1"
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8"
   }
 }

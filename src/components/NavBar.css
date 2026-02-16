@@ -1,0 +1,99 @@
+.kn-nav-bar {
+  background-color: var(--kn-color-bg);
+  border-bottom: 1px solid var(--kn-color-border-subtle);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0 var(--kn-space-lg);
+}
+
+.kn-nav-container {
+  max-width: var(--kn-content-max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  gap: var(--kn-space-md);
+}
+
+.kn-nav-left {
+  flex-shrink: 0;
+}
+
+.kn-nav-logo {
+  font-size: var(--kn-font-size-body);
+  font-weight: var(--kn-font-weight-semibold);
+  color: var(--kn-color-text);
+  text-decoration: none;
+  font-family: var(--kn-font-family-heading);
+}
+
+.kn-nav-logo:hover {
+  color: var(--kn-color-accent);
+  transition: color var(--kn-transition-fast);
+}
+
+.kn-nav-center {
+  display: flex;
+  align-items: center;
+  gap: var(--kn-space-md);
+  flex: 1;
+  justify-content: center;
+}
+
+.kn-nav-link {
+  font-size: var(--kn-font-size-body);
+  color: var(--kn-color-text);
+  text-decoration: none;
+  padding: var(--kn-space-xs) var(--kn-space-sm);
+  border-radius: var(--kn-radius-sm);
+  transition: all var(--kn-transition-fast);
+}
+
+.kn-nav-link:hover {
+  background-color: var(--kn-color-bg-subtle);
+  color: var(--kn-color-accent);
+}
+
+.kn-nav-link-active {
+  color: var(--kn-color-accent);
+  font-weight: var(--kn-font-weight-medium);
+}
+
+.kn-nav-right {
+  display: flex;
+  align-items: center;
+  gap: var(--kn-space-sm);
+  flex-shrink: 0;
+}
+
+.kn-nav-user {
+  font-size: var(--kn-font-size-caption);
+  color: var(--kn-color-text);
+}
+
+.kn-nav-logout {
+  padding: var(--kn-space-xs) var(--kn-space-sm);
+}
+
+@media (max-width: 768px) {
+  .kn-nav-container {
+    flex-wrap: wrap;
+    height: auto;
+    padding: var(--kn-space-sm) 0;
+  }
+
+  .kn-nav-center {
+    order: 3;
+    width: 100%;
+    justify-content: flex-start;
+    padding-top: var(--kn-space-sm);
+    border-top: 1px solid var(--kn-color-border-subtle);
+    margin-top: var(--kn-space-sm);
+  }
+
+  .kn-nav-user {
+    display: none;
+  }
+}
